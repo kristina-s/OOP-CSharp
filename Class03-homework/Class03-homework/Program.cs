@@ -173,17 +173,26 @@ namespace Class03_homework
             //task 12
             for( int n = 1; n<=100; n++)
             {
-                if((n % 3 == 0) && (n % 5 == 0))
-                {
-                    Console.WriteLine("FizzBuzz");
-                }
+                
                 if(n % 3 == 0)
                 {
+                    if((n % 3 == 0) && (n % 5 == 0))
+                    {
+                        Console.WriteLine("FizzBuzz");
+                        continue;
+                    }
                     Console.WriteLine("Fizz");
+                    continue;
                 }
                 if(n % 5 == 0)
                 {
+                    if((n % 3 == 0) && (n % 5 == 0))
+                    {
+                        Console.WriteLine("FizzBuzz");
+                        continue;
+                    }
                     Console.WriteLine("Buzz");
+                    continue;
                 }
                 
                 Console.WriteLine(n);
