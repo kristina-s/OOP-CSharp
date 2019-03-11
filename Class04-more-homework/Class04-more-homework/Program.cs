@@ -119,13 +119,17 @@ namespace Class04_more_homework
             switch (choice)
             {
                 case '1':
-                    foreach (var elem in a)
-                    {
-                        char e = elem;
-                        if (a.All(Char.IsDigit))
+                    for (int i = 0; i < a.Length; i++)
+			{
+                        char e = a[i];
+                        if (Char.IsDigit(e))
                         {
                             numCount++;
                         }
+			}
+                    foreach (var elem in a)
+                    {
+                        
                     };
                     Console.WriteLine($"There are {numCount} digits in the string!");
                     break;
